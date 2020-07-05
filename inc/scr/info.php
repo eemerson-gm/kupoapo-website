@@ -45,7 +45,7 @@
                     <p class=\"info_longinfo\">".$sql_row["project_longinfo"]."</p>
                 </div>
                 <div class=\"info_divider\">
-                    <input class=\"info_button\" type=\"button\" onclick=\"location.href='".$sql_row["project_link"]."';\" value=\"".$sql_row["project_button"]."\" />
+                    <input type=\"button\" class=\"info_button\" onclick=\"location.href='".$sql_row["project_link"]."';\" value=\"".$sql_row["project_button"]."\" />
                 </div>
                 <div class=\"info_divider\">";
                 include("tags.php");
