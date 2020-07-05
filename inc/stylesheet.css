@@ -169,6 +169,7 @@ p.info_tinyinfo{
 }
 p.info_longinfo{
     width: 50%;
+    margin: auto;
 }
 table.info_table{
     table-layout: fixed;
