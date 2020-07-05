@@ -2,9 +2,9 @@
 
 //Defines the database connection variables.
 $database_server = "localhost";
-$database_username = "root";
-$database_password = "password";
-$database_name = "website";
+$database_username = "u791866351_kupoapo";
+$database_password = "3?Vr|?9f";
+$database_name = "u791866351_Main";
 
 //Connects to the database.
 $database_connection = mysqli_connect($database_server, $database_username, $database_password, $database_name, "3306");
