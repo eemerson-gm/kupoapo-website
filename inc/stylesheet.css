@@ -1,0 +1,195 @@
+/***************************/
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color-white);
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+    image-rendering: pixelated;
+}
+*:focus {
+    outline: none;
+}
+body {
+    background-color: var(--color-darkgray);
+}
+:root{
+    --color-white:      #ffffff;
+    --color-lightblue:  #75ceea;
+    --color-blue:       #317ad7;
+    --color-darkblue:   #283785;
+    --color-black:      #1a1b35;
+    --color-darkgray:   #2e354e;
+    --color-gray:       #4f6678;
+    --color-lightgray:  #a4bcc2;
+    --color-lime:       #ecf860;
+    --color-lightgreen: #94d446;
+    --color-green:      #3b7850;
+    --color-darkgreen:  #20322e;
+    --color-darkred:    #512031;
+    --color-red:        #a43e4b;
+    --color-orange:     #dc7d5e;
+    --color-yellow:     #f0cc90;
+
+}
+/***************************/
+input[type=text], input[type=number], textarea{
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: var(--color-black);
+}
+input[type=text]::placeholder{
+    color: var(--color-lightgray);
+}
+/***************************/
+div.header_background{
+    text-align: center;
+    background-image: url("../img/background.jpg");
+    background-size: 320px 320px;
+    background-repeat: repeat;
+    animation: animation_scroll 20s linear infinite;
+}
+div.header_navigation{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--color-black);
+    box-shadow: 0px 1px 3px black;
+}
+table.header_table{
+    margin: auto;
+}
+td.header_column{
+    width: 160px;
+    text-align: center;
+}
+a.header_link{
+    text-decoration: none;
+    color: var(--color-white);
+}
+a.header_link:hover{
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+img.header_image{
+    width: 100%;
+    max-width: 972px;
+}
+/***************************/
+div.list_table{
+    margin-top: 12px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 620px);
+    gap: 1%;
+}
+div.list_column{
+    padding: 12px;
+    text-align: center;
+    background-color: var(--color-black);
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+}
+div.list_column:hover{
+    cursor: pointer;
+    background-color: var(--color-darkblue);
+}
+table.list_table{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+img.list_image{
+    width: 100%;
+    max-width: 620px;
+    height: 360px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+}
+td.list_preview{
+    text-align: center;
+}
+td.list_title{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+td.list_tinyinfo{
+    text-align: center;
+}
+td.list_icon{
+    width: 24px;
+}
+img.list_icon{
+    width: 24px;
+    text-align: center;
+    image-rendering: auto;
+}
+/***************************/
+div.project_table{
+    margin-top: 12px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1%;
+}
+div.project_column{
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+    background-color: var(--color-black);
+}
+div.project_column:hover{
+    cursor: pointer;
+    background-color: var(--color-darkblue);
+}
+img.project_image{
+    width: 100%;
+    max-width: 320px;
+    height: 135px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+}
+/***************************/
+div.info_divider{
+    margin: 12px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+    background-color: var(--color-black);
+}
+h1.info_title{
+    font-size: 32px;
+    font-weight: bold;
+}
+p.info_tinyinfo{
+
+}
+p.info_longinfo{
+    
+}
+table.info_table{
+    table-layout: fixed;
+    width: 100%;
+}
+td.info_preview{
+    text-align: center;
+    width: 33%;
+}
+img.info_image{
+    width: 100%;
+    max-width: 640px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+}
+/***************************/
+@keyframes animation_scroll{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 320px 320px;
+    }
+}
