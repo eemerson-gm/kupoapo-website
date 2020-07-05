@@ -44,10 +44,16 @@
                 <div class=\"info_divider\">
                     <p class=\"info_longinfo\">".$sql_row["project_longinfo"]."</p>
                 </div>
-                <div class=\"info_divider\">
-                    <input type=\"button\" class=\"info_button\" onclick=\"location.href='".$sql_row["project_link"]."';\" value=\"".$sql_row["project_button"]."\" />
-                </div>
-                <div class=\"info_divider\">";
+                ";
+
+                //Checks if the button name is defined.
+                if (!empty($sql_row["project_button"])){
+                    echo "<div class=\"info_divider\">
+                        <input type=\"button\" class=\"info_button\" onclick=\"location.href='".$sql_row["project_link"]."';\" value=\"".$sql_row["project_button"]."\" />
+                    </div>";
+                }
+                
+                echo "<div class=\"info_divider\">";
                 include("tags.php");
                 echo "</div>";
 
