@@ -168,7 +168,7 @@ p.info_tinyinfo{
 
 }
 p.info_longinfo{
-    
+    width: 50%;
 }
 table.info_table{
     table-layout: fixed;
@@ -183,6 +183,11 @@ img.info_image{
     max-width: 640px;
     border-radius: 12px;
     box-shadow: 0px 1px 3px black;
+}
+input[type=button].info_button{
+    border: none;
+    color: var(--color-white);
+    background-color: var(--color-darkgray);
 }
 /***************************/
 @keyframes animation_scroll{
