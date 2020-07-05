@@ -4,7 +4,7 @@
     <?php
 
         //Queries the database from projects.
-        $sql_command = "SELECT project_id, project_title, project_image1, project_tinyinfo, project_language, project_complete, project_team, project_date FROM projects WHERE project_type = ".$project_type.";";
+        $sql_command = "SELECT project_id, project_title, project_image1, project_tinyinfo, project_language, project_complete, project_team, project_date FROM projects WHERE project_type = ".$project_type." ORDER BY project_date DESC;";
         $sql_results = $database_connection->query($sql_command);
 
         //Checks if the results were not empty.

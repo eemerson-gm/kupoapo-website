@@ -10,7 +10,7 @@
             <?php
 
                 //Queries the database from projects.
-                $sql_command = "SELECT project_id, project_title, project_image1, project_tinyinfo, project_team, project_language, project_date FROM projects ORDER BY project_date DESC LIMIT 3";
+                $sql_command = "SELECT project_id, project_title, project_image1, project_tinyinfo, project_team, project_language, project_date FROM projects ORDER BY project_date DESC LIMIT 6";
                 $sql_results = $database_connection->query($sql_command);
 
                 //Checks if the results were not empty.
