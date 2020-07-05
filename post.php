@@ -44,6 +44,12 @@
                         <td><input name=\"date\" type=\"date\" style=\"color:black;\"></td>
                     </tr>
                     <tr>
+                        <td><input name=\"button\" type=\"text\" placeholder=\"Button...\"></td>
+                    </tr>
+                    <tr>
+                        <td><input name=\"link\" type=\"text\" placeholder=\"Link...\"></td>
+                    </tr>
+                    <tr>
                         <td><input name=\"type\" type=\"checkbox\" value=\"Yes\"><label for=\"complete\">Game?</label></td>
                     </tr>
                     <tr>

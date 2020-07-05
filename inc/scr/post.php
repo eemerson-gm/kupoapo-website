@@ -13,6 +13,8 @@
     $project_date       = $_POST['date'];
     $project_type       = isset($_POST['type']);
     $project_complete   = isset($_POST['complete']);
+    $project_button     = $_POST['button'];
+    $project_link       = $_POST['link'];
     $project_submit     = $_POST['submit'];
 
     //Gets the file information.
@@ -68,7 +70,7 @@
                         echo 'upload sucess';
 
                         //Creates the sql statement and command.
-                        $sql_command = "INSERT INTO projects (project_title, project_image1, project_image2, project_image3, project_tinyinfo, project_longinfo, project_language, project_complete, project_team, project_type, project_time, project_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                        $sql_command = "INSERT INTO projects (project_title, project_image1, project_image2, project_image3, project_tinyinfo, project_longinfo, project_language, project_complete, project_team, project_type, project_time, project_date, project_button, project_link) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
                         $sql_statement = mysqli_stmt_init($database_connection);
 
                         //Prepares the statement for sql storage.
@@ -78,7 +80,7 @@
                         }
                         else{
                             $file_path = "img/previews/".$file_name;
-                            mysqli_stmt_bind_param($sql_statement,"sssssssiiiis", $project_title, $file1_path, $file2_path, $file3_path, $project_tinyinfo, $project_longinfo, $project_language, $project_complete, $project_team, $project_type, $project_time,  $project_date);
+                            mysqli_stmt_bind_param($sql_statement,"sssssssiiiisss", $project_title, $file1_path, $file2_path, $file3_path, $project_tinyinfo, $project_longinfo, $project_language, $project_complete, $project_team, $project_type, $project_time,  $project_date, $project_button, $project_link);
                             mysqli_stmt_execute($sql_statement);
                             mysqli_stmt_store_result($sql_statement);
                         }
