@@ -144,6 +144,17 @@ div.project_column:hover{
     cursor: pointer;
     background-color: var(--color-darkblue);
 }
+div.project_incomplete{
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 1px 3px black;
+    background-color: var(--color-darkred);
+}
+div.project_incomplete:hover{
+    cursor: pointer;
+    background-color: var(--color-red);
+}
 img.project_image{
     width: 100%;
     max-width: 320px;

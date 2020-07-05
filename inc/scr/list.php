@@ -14,7 +14,16 @@
             while($sql_row = $sql_results->fetch_assoc()){
 
                 //Creates a space for the project preview.
-                echo "<div class=\"project_column\" onclick=\"window.location='./projects.php?id=".$sql_row["project_id"]."'\">
+                echo "<div class=";
+                
+                //Checks if the project is complete.
+                if ($sql_row["project_complete"] == true){
+                    echo "\"project_column\"";
+                }else{
+                    echo "\"project_incomplete\"";
+                }
+                
+                echo" onclick=\"window.location='./projects.php?id=".$sql_row["project_id"]."'\">
                         <table>
                             <tr>
                                 <td class=\"list_preview\">
