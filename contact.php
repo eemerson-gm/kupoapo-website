@@ -1,4 +1,5 @@
 <?php include('inc/header.php'); ?>
+<title>Kupoapo - Contact</title>
 <body>
         <div class="info_divider" style="width:50%; margin-left:auto; margin-right:auto;">
             Eric Emerson<br />

@@ -1,4 +1,5 @@
 <?php include('inc/header.php'); ?>
+<title>Kupoapo - Games</title>
 <body>
 
     <!-- Connects to the mysql database. -->
